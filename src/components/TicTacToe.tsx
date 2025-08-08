@@ -110,7 +110,7 @@ const TicTacToe = () => {
       </h1>
 
       <h2 className="text-white lg:text-xl text-sm font-bold mb-4">
-        You&apos;re playing with: {opponentName || "Loading..."}
+        You&apos;re playing with {opponentName || "Loading..."}
       </h2>
 
       <p></p>
@@ -198,7 +198,7 @@ const TicTacToe = () => {
       <div className="flex flex-row mt-8 justify-between w-full px-8 space-x-7">
         <Button onClick={resetGame}>Reset</Button>
         <Button disabled>Start</Button>
-        <Button onClick={() => setLock(!lock)}>
+        <Button disabled onClick={() => setLock(!lock)}>
           {lock ? "Play" : "Pause"}
         </Button>
       </div>
