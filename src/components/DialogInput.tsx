@@ -64,7 +64,7 @@ const DialogInput = () => {
         </Button>
 
         <p className=" text-center text-sm mt-8 text-white">
-          please note that your detals are not being saved to a a proper
+          please note that your details are not being saved to a a proper
           database yet
         </p>
         </div>

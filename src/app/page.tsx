@@ -1,16 +1,12 @@
 import DialogInput from "@/components/DialogInput";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center w-screen bg-black">
+    <div className="h-screen flex flex-col items-center justify-center px-8 lg:w-screen bg-black">
       <h1 className="welcome text-center text-white xl:w-[50%] text-4xl font-bold ">
         Welcome to Taiwo Game&apos;s center
       </h1>
@@ -35,7 +31,7 @@ const Home = () => {
                     play
                   </Button>
                 </DialogTrigger>
-               <DialogInput/>
+                <DialogInput />
               </Dialog>
             </div>
           </div>
