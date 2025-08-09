@@ -1,4 +1,5 @@
 import DialogInput from "@/components/DialogInput";
+import MorrisDialog from "@/components/MorrisDialog";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 
@@ -21,17 +22,30 @@ const Home = () => {
         <p className="text-white mb-8 text-left ">Please choose a game:</p>
 
         <div className="lg:w-[70%] w-full flex mx-auto  justify-center items-center py-8 rounded-lg h-fit text-white ">
-          <div className="w-full  flex lg:w-[85%] justify-center ">
+          <div className="w-full  flex lg:w-[85%] text-sm gap-4 flex-col justify-center ">
             <div className="flex w-full h-fit items-center flex-row justify-between">
               <p>Tic Tac Toe</p>
 
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="bg-white hover:bg-gray-300 text-black ">
+                  <Button className="bg-white hover:bg-gray-300 text-sm text-black ">
                     play
                   </Button>
                 </DialogTrigger>
                 <DialogInput />
+              </Dialog>
+            </div>
+
+            <div className="flex w-full h-fit items-center flex-row justify-between">
+              <p>Men&apos;s Morris</p>
+
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button className="bg-white hover:bg-gray-300 text-sm text-black ">
+                    play
+                  </Button>
+                </DialogTrigger>
+                <MorrisDialog/>
               </Dialog>
             </div>
           </div>
